@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+/*  */
+:root{
+    --background: rgb(255, 255, 255);
+    --card-background: rgb(226, 225, 225);
+    --city-text-color: purple;
+    --stroke-color: black;
+    --text-color: black;
+    --icon-bg: url("./IMG/sun.svg");
+}
+
+.dark-mode{
+    --background: rgba(20, 20, 20, 0.993);
+    --card-background: rgb(37, 37, 37);
+    --city-text-color: yellowgreen;
+    --stroke-color: white;
+    --text-color: white;
+    --icon-bg: url("./IMG/moon-stars.svg");
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.box-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: fit-content;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.box-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.box-content > .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.box-content > .profile > .profile-img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.box-content > .profile > .profile-img > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: scale(3);
+}
+
+.box-content > .profile > p{
+    display: flex;
+    flex-direction: column;
+    color: var(--city-text-color);
+}
+
+.toggle-btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-btn button {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    border: none;
+    background: white var(--icon-bg) no-repeat center;
+    position: absolute;
+    animation: slide-in 0.5s;
+    left: 0;
+}
+
+.dark-mode .toggle-btn button{
+    right: 0;
+    left: auto;
+    animation: slide-back 0.5s;
+}
+
+
+.toggle-btn span {
+    border: 1px solid var(--stroke-color);
+    height: 24px;
+    width: 72px;
+    border-radius: 50px;
+}
+
+.box-content > .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0px;
+}
+
+.box-content > .links > section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 1.2rem;
+    border: 1px solid var(--stroke-color);
+    transform: 2s;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.box-content > .links > section > a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section:hover{
+    background-color: rgba(255, 255, 255, 0.267);
+    border: none;
+    transform: scale(0.99);
+    transition: 0.3s;
+}
+
+.box-content > .credits{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@keyframes slide-in {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+}
+  
+@keyframes slide-back {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
