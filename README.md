@@ -1,4 +1,4 @@
-# 🚀 Nome do Projeto
+# 🚀 DevLinks
 
 > O projeto foi criado com base nos ensinamentos da Rocketseat, é uma página de links com a funcionalidade toggle do Javascript para troca dos temas 'escuro' e 'claro' da página.
 
