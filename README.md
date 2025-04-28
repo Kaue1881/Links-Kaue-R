@@ -13,7 +13,7 @@
 
 ## 🔗 Acesse o Projeto
 
-[👉 Clique aqui para acessar o projeto](https://kaue1881.github.io/Links-Kaue-R./)
+[👉 Clique aqui para acessar o projeto](https://kaue1881.github.io/Links-Kaue-R/)
 
 ## ✅ Conclusão
 
