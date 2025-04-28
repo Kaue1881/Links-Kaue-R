@@ -1,6 +1,6 @@
 # 🚀 Nome do Projeto
 
-> Uma breve descrição do projeto, destacando seu propósito e funcionalidades principais.
+> O projeto foi criado com base nos ensinamentos da Rocketseat, é uma página de links com a funcionalidade toggle do Javascript para troca dos temas 'escuro' e 'claro' da página.
 
 ![Imagem do Projeto](./IMG/readME.png)
 
