@@ -2,7 +2,7 @@
 
 > Uma breve descrição do projeto, destacando seu propósito e funcionalidades principais.
 
-![Imagem do Projeto](.github\image.png)
+![Imagem do Projeto](./IMG/readME.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
